@@ -41,10 +41,12 @@ namespace ParfumUI
             this.textSearchName = new System.Windows.Forms.TextBox();
             this.btnRefres = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelHeaders.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button3
@@ -81,7 +83,7 @@ namespace ParfumUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(435, 89);
+            this.label1.Location = new System.Drawing.Point(712, 90);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(391, 55);
             this.label1.TabIndex = 4;
@@ -120,12 +122,11 @@ namespace ParfumUI
             // 
             // panelHeaders
             // 
-            this.panelHeaders.Controls.Add(this.pictureBox1);
+            this.panelHeaders.Controls.Add(this.tableLayoutPanel1);
             this.panelHeaders.Controls.Add(this.btnSearch);
             this.panelHeaders.Controls.Add(this.label3);
             this.panelHeaders.Controls.Add(this.textSearchName);
             this.panelHeaders.Controls.Add(this.btnRefres);
-            this.panelHeaders.Controls.Add(this.label1);
             this.panelHeaders.Controls.Add(this.labelGriidViewName);
             this.panelHeaders.Controls.Add(this.button3);
             this.panelHeaders.Controls.Add(this.button4);
@@ -137,10 +138,13 @@ namespace ParfumUI
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(336, 221);
+            this.pictureBox1.Size = new System.Drawing.Size(599, 230);
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
@@ -207,6 +211,22 @@ namespace ParfumUI
             this.panel1.Size = new System.Drawing.Size(1211, 317);
             this.panel1.TabIndex = 8;
             // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1211, 236);
+            this.tableLayoutPanel1.TabIndex = 29;
+            // 
             // Parfum_Function
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,6 +243,8 @@ namespace ParfumUI
             this.panelHeaders.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -240,5 +262,6 @@ namespace ParfumUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textSearchName;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

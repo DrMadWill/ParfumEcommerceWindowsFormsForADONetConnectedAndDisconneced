@@ -37,8 +37,7 @@ namespace ParfumUI
             combBrend.SelectedIndex = 0;
             combDensity.SelectedIndex = 0;
             combGender.SelectedIndex = 0;
-
-
+            textImage.ReadOnly = true;
 
         }
 
@@ -107,6 +106,11 @@ namespace ParfumUI
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             }
 
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

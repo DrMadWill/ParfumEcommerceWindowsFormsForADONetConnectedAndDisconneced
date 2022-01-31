@@ -39,6 +39,7 @@ namespace ParfumUI
                 LoadParfumItems.LoadGender(sqlConnection, false, combGender);
                 LoadParfumItems.LoadSearchName(sqlConnection, false, combSearchName);
                 ChangeSearchName(sqlConnection, false);
+                textImage.ReadOnly = true;
             }
 
         }
